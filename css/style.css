@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    color: #3F5D45;
+    font-family: 微軟正黑體 , PingFang TC;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 30px 0px ;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+.wrap img{
+    width: 40%;
+}
+.wrap .ham{
+    display: none;
+}
+.switch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap_page{
+    width: 215px;
+    display: flex;
+    justify-content: space-around;
+}
+.switch .shopping_cart img{
+    margin-left: 30px;
+    width: 24px;
+    height: 24px;
+}
+.switch a:hover{
+    background: gray;
+}
+.banner img{
+    margin-bottom: 60px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.kindlist{
+    width: 30%;
+}
+.productlist{
+    width: 70%;
+}
+.kindlist ul{
+    display: flex;
+    flex-direction: column;    
+}
+.kindlist ul li , .kind1{
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center; 
+    font-family: PingFang TC;
+}
+
+.kindlist .kind1{
+    background: #3F5D45;
+    color: #EAF0ED;
+    display: block;
+    padding: 16px;
+}
+.kindlist ul .kind2{
+    background: #EAF0ED;
+}
+.kindlist ul a{
+    padding: 16px;
+    border: solid 1px #EAF0ED;
+
+}
+.kindlist ul a:hover{
+    background: #3f5d45;
+    color: #EAF0ED;
+    border: solid 1px #3f5d45;
+
+}
+.productlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.productlist li{
+    width: 45%;
+}
+.picture{
+    position: relative;
+    /* width: 35%; */
+}
+.picture .intro h2{
+    position: absolute;
+    writing-mode: vertical-rl;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px;
+    left: 20px;
+    font-size: 16px;
+    background: #3F5D45;
+    color: #EAF0ED;
+    box-sizing: border-box;
+}
+.picture .intro .favorite{
+    position: absolute;
+    right: 18.35px;
+    top: 20px;
+}
+.namemoney{
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px #EAF0ED;
+    align-items: center;
+
+}
+.namemoney .name{
+    border-right: solid 1px #EAF0ED;
+    padding: 14px 33px;
+    line-height: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.productlist a{
+    padding: 16px;
+    text-align: center;
+    background: #EAF0ED;
+    line-height: 20px;
+}
+.productlist a:hover{
+    padding: 16px;
+    text-align: center;
+    background: #3f5d45;
+    color: #EAF0ED;
+    line-height: 20px;
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+.footer .number{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: solid 1px #EAF0ED;
+    font-size: 20px;
+    line-height: 20px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    display: block;
+}
+.footer img{
+    padding: 17px;
+    width: 60px;
+    box-sizing: border-box;
+    border: solid 1px #EAF0ED;
+    display: block;
+}
+.footer .page .number:hover{
+  background: #3f5d45;
+  color: #EAF0ED;
+}
+.footer .page .icon:hover{
+    background: #EAF0ED;  
+  }
+.subscri{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.subscri .mail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3F5D45;
+    padding: 30px 122px;
+}
+.subscri .mail .icon{
+    display: flex; 
+    align-items: center;
+}
+.subscri .mail .icon img{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.subscri .mail .icon h4{
+    color: #EAF0ED;
+    font-size: 24px;
+    line-height: 29px;
+    width: 300px;
+}
+.subscri .input{
+    position: relative;
+    display: inline-block;
+    /* width: 380px; */
+    width: 40%;
+}
+.subscri .input .mailicon{
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/mail-24px.png) ;
+    /* background-position:20% 80%; */
+    width: 24px;
+    height: 24px;
+}
+.subscri .input .inmail{
+    text-indent: 40px;
+    width: 80%;
+    height: 56px;
+    box-sizing: border-box;
+    border: none;
+}
+.subscri .input .next{
+    position: absolute;
+    background: #FFE180;
+    border: solid 0px white;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png) ;
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    width: 20%;
+    height: 56px;
+  }
+.subscri .info{
+    background: #EAF0ED;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.subscri .info .connect .icon{
+    width: 171px;
+    height: 26.6px;
+}
+.subscri .info .connect p{
+    margin-top: 115.5px;
+    line-height: 24px;
+}
+.subscri .info .icons{
+    display: flex;
+    margin-top: 30px;
+}
+.subscri .info .connect .icons img{
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+.subscri .slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.subscri .slogan h4{
+    writing-mode: vertical-rl;
+    font-size: 26px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    color: #3F5D45;
+}
+.subscri .mail .input{
+    position: relative;
+    display: inline-block;
+    /* background: green; */
+}
+@media(max-width: 375px){
+    .container{
+        max-width: 375px;
+        padding: 36px 0px ;
+        margin: 0 auto;
+    }   
+    .wrap .wrap_page{
+        display: none;
+    }
+    .wrap .shopping_cart{
+        /* width: 18px; */
+        /* height: 18px; */
+    }
+    .wrap .shopping_cart img{
+        height: 18px;
+        width: 18px; 
+        margin-left: 0px;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .wrap{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container .wrap .banner{
+        width: 114px;
+    }
+    .container .wrap .ham{
+        display: block;
+        width: 18px;
+        height: 22px;    
+}
+    .banner img{
+        margin-bottom: 0px;
+    }
+
+    .content .kindlist{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .productlist li{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .footer .page{
+        justify-content: center;
+    }
+    .subscri{
+        max-width: 375px;
+
+    }
+    .subscri .mail{
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .subscri .input{
+        max-width: 300px;
+        width: 80%;
+        padding: 30px 52px;
+
+    }
+    .subscri .mail .icon{
+        margin-bottom: 33px;
+        width: 80%;
+    }
+    .subscri .slogan{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .container{
+        max-width: 768px;
+        padding: 36px 0px ;
+    }   
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .kindlist{
+        width: 60%;
+    }
+    .subscri{
+        max-width: 768px;
+    }
+    .subscri .mail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 52px;
+
+    }
+    .subscri .input{
+        max-width: 768px;
+        width: 80%;
+    }
+    .subscri .mail .icon{
+        margin-bottom: 33px;
+        width: 80%;
+    }
+}
