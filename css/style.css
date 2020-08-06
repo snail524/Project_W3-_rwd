@@ -58,8 +58,6 @@ img{
 .container{
     margin: 0 auto;
     max-width: 940px;
-    padding: 30px 0px ;
-    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -69,6 +67,7 @@ a{
     display: flex;
     justify-content: space-between;
     margin-bottom: 38px;
+    margin-top: 30px;
 }
 .wrap img{
     width: 40%;
@@ -112,7 +111,7 @@ a{
     display: flex;
     flex-direction: column;    
 }
-.kindlist ul li , .kind1{
+.kindlist ul li , .classify  {
     box-sizing: border-box;
     font-size: 24px;
     line-height: 30px;
@@ -120,7 +119,7 @@ a{
     font-family: PingFang TC;
 }
 
-.kindlist .kind1{
+.kindlist .classify{
     background: #3F5D45;
     color: #EAF0ED;
     display: block;
@@ -172,17 +171,21 @@ a{
 }
 .namemoney{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     border: solid 1px #EAF0ED;
     align-items: center;
 
 }
 .namemoney .name{
     border-right: solid 1px #EAF0ED;
-    padding: 14px 33px;
+    padding: 14px 0px;
     line-height: 20px;
     text-align: center;
+    width: 60%;
     box-sizing: border-box;
+}
+.namemoney .money{
+    text-align: center;
 }
 .productlist a{
     padding: 16px;
@@ -201,6 +204,9 @@ a{
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
+}
+.footer{
+    margin-bottom: 30px;
 }
 .footer .number{
     padding: 20px;
@@ -228,10 +234,7 @@ a{
 .footer .page .icon:hover{
     background: #EAF0ED;  
   }
-.subscri{
-    margin: 0 auto;
-    max-width: 1024px;
-}
+
 .subscri .mail{
     display: flex;
     justify-content: space-between;
@@ -330,6 +333,47 @@ a{
     display: inline-block;
     /* background: green; */
 }
+
+@media(max-width: 768px){
+    .container{
+        max-width: 600px;
+        /* padding: 36px 0px ; */
+    }   
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .kindlist{
+        width: 100%;
+        margin-bottom: 33px;
+    }
+    .productlist{
+        width: 90%;
+    }
+    .productlist .name{
+        padding: 14px 0px;
+
+    }
+    .subscri{
+        max-width: 768px;
+    }
+    .subscri .mail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 52px;
+
+    }
+    .subscri .input{
+        max-width: 768px;
+        width: 80%;
+    }
+    .subscri .mail .icon{
+        margin-bottom: 33px;
+        width: 80%;
+    }
+    
+}
 @media(max-width: 375px){
     .container{
         max-width: 375px;
@@ -339,10 +383,7 @@ a{
     .wrap .wrap_page{
         display: none;
     }
-    .wrap .shopping_cart{
-        /* width: 18px; */
-        /* height: 18px; */
-    }
+
     .wrap .shopping_cart img{
         height: 18px;
         width: 18px; 
@@ -373,11 +414,17 @@ a{
         width: 100%;
         margin-bottom: 30px;
     }
+    .productlist{
+        width: 80%;
+    }
     .productlist li{
         width: 100%;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+    }
+    .productlist .name{
+        padding: 14px 0px;
     }
     .footer .page{
         justify-content: center;
@@ -402,36 +449,5 @@ a{
     }
     .subscri .slogan{
         display: none;
-    }
-}
-@media(max-width: 768px){
-    .container{
-        max-width: 768px;
-        padding: 36px 0px ;
-    }   
-    .content{
-        flex-direction: column;
-        align-items: center;
-    }
-    .content .kindlist{
-        width: 60%;
-    }
-    .subscri{
-        max-width: 768px;
-    }
-    .subscri .mail{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 52px;
-
-    }
-    .subscri .input{
-        max-width: 768px;
-        width: 80%;
-    }
-    .subscri .mail .icon{
-        margin-bottom: 33px;
-        width: 80%;
     }
 }
